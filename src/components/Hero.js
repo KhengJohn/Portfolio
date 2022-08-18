@@ -20,14 +20,17 @@ function Hero(){
                     strings:[
                         "I'm a Web Developer",
                         "I'm a Software Engineer",
-                        "I'm A Graphic Designer",
+                        "I'm a Graphic Designer",
                         "I'm a Tech Enthusiast",
                     ]
 
                 }} />
             </h2>
-            <p>Im a software engineer who specializes on building webpages which solve human problems</p>
-            <a className="btn">View CV</a>
+            <div className="p2">
+            <p className="p2p">Welcome to my portfolio, feel free to look around and contact me, as i look forward to hearing from you.</p>
+            {/* <p>On Here i have placed my Projects, Social Media Links and Previous Experiences</p> */}
+            <a onClick={"location.href='my-app/src/components/Idoko Johns Resume.pdf'"} href="my-app\src\components\Idoko John's Resume.pdf"  className="btn-cv">View CV</a>
+            </div>
             </div>
             
         </section>
