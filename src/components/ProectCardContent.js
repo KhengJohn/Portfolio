@@ -8,8 +8,7 @@ function PCard(props){
         <div className="projectcard">
             <div className="project-content">
             <div className="projectcard-top">
-               <img src={Projectimg} className="project-img" alt="" />
-                
+               <img src={Projectimg} className="project-img" alt="" />     
             </div>
             <div className="projectcard-body">
                 <h2>{props.Title}</h2>

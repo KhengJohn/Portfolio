@@ -6,21 +6,28 @@ import About from "./components/About"
 import Hero from "./components/Hero"
 import Socials from "./components/Socials"
 import Projects from "./components/Projects"
-import By from "./components/By"
+import Footer from "./components/Footer"
+import NavBack from "./components/Navback"
+import Skill from "./components/Skill"
+import Project from "./components/Project"
 function App(){
     return(
-    <div className="allContent">
-         <Nav />
+    <div className="allContent">     
+    <Nav />
+    <NavBack />
     <div className="pageContent">
-   <div className="mainContent">
+    <div className="mainContent">
     <Hero />
-    <About />
-    <Projects />
+    <Skill />
+    <Project />
+    {/* <About />
+    <Projects /> */}
     </div>
-        <Socials />
-        <By />
-    </div>
-    </div>
+    <Socials />
+    </div> 
+    
+   <Footer />
+     </div>
 )}
 
 ReactDOM.render(<App />, document.getElementById('root'))

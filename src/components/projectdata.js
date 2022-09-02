@@ -42,6 +42,17 @@ export default [
         livelink:"https://haulage.netlify.app/",
         gitlink:"https://github.com/KhengJohn/Haulage-WebApp",
        
+    },
+    {
+        projectTitle:"Payment Flow",
+        description:"Payment flow system Built with react ",
+        lang1:"React",
+        lang2:"JSX",
+        lang3:"CSS",
+        lang4:"Javascript",
+        livelink:"https://johnidoko.netlify.app/",
+        gitlink:"https://github.com/KhengJohn/Haulage-WebApp",
+       
     }
 ]
 

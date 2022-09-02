@@ -1,11 +1,11 @@
 import style from "./style.css"
 
-function By(){
+function Footer(){
     return(
-        <>
+        <footer>
         <p className="by">Designed And Implemented By John Idoko</p>
-        </>
+        </footer>
     )
 }
 
-export default By;
+export default Footer;
