@@ -32,7 +32,7 @@ export default function Project(){
                 <div className="projtitle">
                 <p>#3</p>
                 <h2>School Management System</h2>
-                <a href="https://desalmsc.netlify.app/">Live</a>
+                <a href="https://minervahubschoolmanagementsystem.netlify.app/">Live</a>
                 </div>
             </div>   
             <a className="btn btn-project"  href="">View More</a>     
