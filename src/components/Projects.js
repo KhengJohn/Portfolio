@@ -15,7 +15,7 @@ function Projects(){
     })
     return(
         <section className="projects-section">
-           <h1 className="head">Projects</h1>
+           <h1 className="head">Other Projects</h1>
              <div className="project-cards">
        
              {projectElements }

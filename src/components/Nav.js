@@ -1,43 +1,53 @@
-import style from "./style.css"
-import { useRef } from "react"
-import { useState } from "react";
-import Logo from "./logo192.png"
+import { useState , useRef } from "react";
+import style from "./style.css";
+import Logo from "./logo192.png";
+
 
 
 
 
 function Nav(){
 
-    const [isNav, setIsNav] = useState(true);
-
     // const hamburger = document.querySelector(".hamburger");
+    // const navLinks = document.querySelector(".nav-links");
     // const links = document.querySelectorAll(".nav-links li");
-const navRef= useRef();
-const ShowNavbar = ( )=> {
-    navRef.current.classList.toggle("open");
- 
-    //  hamburger.classList.toggle("toggle");
+  //  const navLinks = useRef();
+    // const navLinksLi = useRef();
+    // const hamburger = useRef();
+    // hamburger.addEventListener('click',
+    // function hamburgerO (){
+      
+    //     navLinks.classList.toggle("open");
+    //     navLinksLi.forEach(navLinksLi => {
+    //         navLinksLi.classList.toggle("fade");
+    //     });
+    //     hamburger.classList.toggle("toggle");
+    // };
+
+const handleClick = event => {
+  // event.currentTarget.classList.toggle('open');
+  event.currentTarget.classList.toggle('toggle');
+  // event.currentTarget.classList.toggle('fade');
 }
-
-const show = ()=>  { "nav-links"  }
-
 
     return(
         <nav>
           <div class="logo">
         <img src={Logo} alt="Logo Image" class="logoTop" />
       </div>
-            <div onClick={show}  className="hamburger">
-                <div className="line1"></div>
-                <div className="line2"></div>
-                <div className="line3"></div>         
-            </div>
-                <ul ref={navRef}  className={isNav ? "nav-links" : "fade" }>
-                   <li><a href="">Home</a></li> 
-                   <li><a href="">Projects</a></li>
-                   <li><a href="">Services</a></li>
-                   <li><a href="">Contact</a></li>
-                </ul>
+      <div onClick={handleClick}  class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="">Home</a></li>
+        <li><a href="">Dashboard</a></li>
+        <li><a class="btn-project" href="">Sign In</a></li>
+        <li><a class="btn-project" href="">Sign Up</a></li>
+        <li></li>
+      </ul>
   
         </nav>
     )

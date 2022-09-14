@@ -32,9 +32,10 @@ function Hero(){
                 }} />
             </h2>
             <div className="p2">
-            <p className="p2p">Welcome to my portfolio, feel free to look around and contact me, as i look forward to hearing from you.</p>
+                <h3>Welcome to my SPACE,</h3>
+            <p className="p2p"> feel free to look around and contact me, as i look forward to hearing from you.</p>
             {/* <p>On Here i have placed my Projects, Social Media Links and Previous Experiences</p> */}
-            <a className="btn-cv">View CV</a>
+            <a className="btn btn-project cv">Contact Me</a>
             </div>
             </div> 
             <div className="myheroimgdiv">

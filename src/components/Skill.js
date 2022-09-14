@@ -29,7 +29,7 @@ export default function Skill(){
             <div className="skill-writeup">
                 <h2>About Me</h2>
                 <p> John is an experienced, detail-oriented, web developer. 
-                    Who is fervent about technology and how it can be used to solve problems and integrate innovaton.
+                    Who is fervent about technology, and how it can be used to solve problems and integrate innovaton.
                     He has hand-on experience in developing modern websites and web applications using modern languages.
                 </p>
                 <p>

@@ -7,7 +7,9 @@ import Instagramimg from "./instagramimg.png"
 function Socials() {
     return(
         <div className="socials">
-        <div>
+            <h1>Contact John</h1>
+            <p>Get in touch with me</p>
+            <div>
             <a href="https://github.com/KhengJohn"><img src={Githubimg} alt="" className="socials-img simg1" /></a>
             <a href="https://www.linkedin.com/in/john-idoko-474251218"><img src={Linkedimg} alt="" className="socials-img"  /></a>
             <a href="https://twitter.com/KhengJohn?t=wAIeE-iZhmk8h4yUceXpSA&s=09"><img src={Twitterimg} alt="" className="socials-img"  /></a>

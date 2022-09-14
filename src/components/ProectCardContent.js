@@ -14,12 +14,12 @@ function PCard(props){
                 <h2>{props.Title}</h2>
                 <p className="description">{props.description}</p>
             </div>
-            <div className="projectcard-footer">
+            {/* <div className="projectcard-footer">
                 <p>{props.lang1}</p>
                 <p>{props.lang2}</p>
                 <p>{props.lang3}</p>
                 {props.lang4 && <p>{props.lang4}</p>}
-            </div>
+            </div> */}
             </div>
             <div className="linkBar">
                 <a href={props.livelink}><img src={Linkimg} className="linkimg" /></a>

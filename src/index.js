@@ -6,7 +6,6 @@ import About from "./components/About"
 import Hero from "./components/Hero"
 import Socials from "./components/Socials"
 import Projects from "./components/Projects"
-import Footer from "./components/Footer"
 import NavBack from "./components/Navback"
 import Skill from "./components/Skill"
 import Project from "./components/Project"
@@ -20,13 +19,11 @@ function App(){
     <Hero />
     <Skill />
     <Project />
-    {/* <About />
-    <Projects /> */}
+    {/* <About />*/}
+    <Projects /> 
     </div>
     <Socials />
     </div> 
-    
-   <Footer />
      </div>
 )}
 

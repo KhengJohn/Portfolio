@@ -62,7 +62,7 @@ nav{
     display: block;
     height: 3px;
     width: 0%;
-    background-color: var(--red);
+    background-color: var(--green);
     position: absolute;
     top: -4px;
     transition: all ease-in-out 250ms;
@@ -230,19 +230,20 @@ nav{
     flex-direction: row;
 }
 
-.hero-section-intro {
-   /* padding-left:14%;
-   padding-top: 90px; */
-}
-
 .hero-section p:first-child{
     color:var(--green);
     font-size: 20px;
     margin-bottom: 20px; 
 }
 
+.hero-section h3{
+    color:var(--lightxx-slate);
+
+}
 
 .p2p{
+    margin-top: 0px;
+    margin-bottom: 30px;
     color:lightslategray !important;
     font-size: 20px;
 }
@@ -302,7 +303,29 @@ nav{
 
 .socials{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #00664e33;
+    padding: 40px 15px;
+    border-radius: 20px;
+    text-align: center;
+    transition:600ms ease-in;
+    color: var(--lightxx-slate);
+    width: 70%;
+    margin: auto;
   
+}
+
+.socials:hover{
+    box-shadow: #64ffda 0px 0px 30px -10px;
+}
+
+.socials h1{
+margin: 0;
+}
+
+.socials p{
+    margin-bottom: 20px;
 }
 .socials > div {
     position: relative;
@@ -319,14 +342,10 @@ nav{
     border: var(--green) 1px  ;
 }
 
-.socials-img:hover{
-   
+.socials-img:hover{   
     transition: all ease-in-out 500ms;
-    border: var(--red) solid 1px;
-    background-color: #cbfff33d;
     border-radius: 3px;
-    transform:rotateY(360deg);
-   
+    transform:rotateY(360deg);   
 }
 
 @media (max-width:730px){
@@ -337,10 +356,23 @@ nav{
     .hero-section-intro {
         /* padding-left:40px;
         padding-top: 60px; */
-        padding-bottom:30% ;
+        padding-bottom:40% ;
         display: flex;
         flex-direction: column;
      }    
+     .socials{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: #00664e33;
+        padding: 40px 15px;
+        border-radius: 20px;
+        text-align: center;
+        transition:500ms ease-in;
+        color: var(--lightxx-slate);
+        width: 90%;
+        margin: auto;
+     }
 }
 
 
@@ -597,20 +629,6 @@ nav{
     }
 }
 
-footer {
-    background-color: var(--navy);
-    width: 100%;
-    height: auto;
-}
-
-.by{
-       text-align: center;
-        color: var(--lightxx-slate);
-        margin-top: 0;
-        padding-top: 0;
-        padding: 30px;
-   
-}
 
 .myheroimg{
     width: 50%;
@@ -703,7 +721,7 @@ footer {
     border-radius: 50%;
     position: absolute;
   
-    animation: revolve3 10s backwards infinite;
+    animation: revolve3 15s backwards infinite;
 }
 .rotation3{
     width: 53%;
@@ -719,18 +737,42 @@ footer {
     border-radius: 50%;
     position: absolute;
   
-    animation: revolve2 13s alternate-reverse infinite;
+    animation: revolve2 20s alternate-reverse infinite;
 }
-/* @media(max-width:720px){
-    .rotation{
-        width: 0;
-        border-radius: 50%;
-        position: absolute;
-        top:50%;
-        left:50%;
-        animation: revolve 10s linear infinite;
-    }
-} */
+ @media(max-width:720px){
+ .rotation{
+    width: 95%;
+    height:95%;
+    border-radius: 50%;
+    position: absolute;
+  
+    animation: revolve 19s reverse infinite;
+}
+.rotation2{
+    width: 66%;
+    height:66%;
+    border-radius: 50%;
+    position: absolute;
+  
+    animation: revolve3 23s backwards infinite;
+}
+.rotation3{
+    width: 56%;
+    height:56%;
+    border-radius: 50%;
+    position: absolute;
+  
+    animation: revolve 15s linear infinite;
+}
+.rotation4{
+    width: 80%;
+    height:80%;
+    border-radius: 50%;
+    position: absolute;
+  
+    animation: revolve2 17s alternate-reverse infinite;
+}
+}
 
 @keyframes revolve {
     100%{
@@ -767,12 +809,7 @@ footer {
 
 }
 
-.satelite{
-    height: 30px;
-    width: 30px;
-    background-color: #f2f5f7;
-    border-radius: 50%;
-}
+
 .skill-head{
     color: var(--lightxx-slate);
 }
@@ -844,8 +881,8 @@ footer {
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: black;
-    color: #fff;
+    background-color: #64ffda;
+    color: #020c1b;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
@@ -863,6 +900,7 @@ footer {
   .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
+    
   }
 @media(max-width:800px){
     .skill-section{

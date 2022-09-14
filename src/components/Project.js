@@ -1,7 +1,7 @@
 import style from "./style.css";
 import Projectimg1 from "./desalproject.jpg"
 import Projectimg2 from "./moviesearchproject.jpg"
-
+import Projectimg3 from "./smsproject.jpg"
 export default function Project(){
     return(
         <div className="project-section">
@@ -27,12 +27,12 @@ export default function Project(){
             </div>
             <div className="proj-container proj1">
                 <div className="projectImgdiv">
-                <img src={Projectimg1} className="projectImg"/>
+                <img src={Projectimg3} className="projectImg"/>
                 </div>
                 <div className="projtitle">
                 <p>#3</p>
                 <h2>School Management System</h2>
-                <a href="https://desalmsc.netlify.app/">Live</a>
+                <a href="https://minervahubschoolmanagementsystem.netlify.app">Live</a>
                 </div>
             </div>   
             <a className="btn btn-project"  href="">View More</a>     

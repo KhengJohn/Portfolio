@@ -7,16 +7,16 @@ export default [
     { 
         skillImg:"graphicdesign.png",
         skillTitle:"Graphic Design",
-        skillBody:"I build mordern state-of-art web pages and web applications",
+        skillBody:"I create neat and attractive graphic designs out",
     },
     { 
         skillImg:"uidesign.png",
         skillTitle:"UI Design",
-        skillBody:"I build mordern state-of-art web pages and web applications",
+        skillBody:"I create UI designs for mobile and web applications",
     },
     { 
         skillImg:"javascriptimg.png",
-        skillTitle:"UI Design",
-        skillBody:"I build mordern state-of-art web pages and web applications",
+        skillTitle:"Tutoring",
+        skillBody:"I'm also tutor for people who are interested in programming ",
     }
 ]
