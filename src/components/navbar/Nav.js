@@ -1,7 +1,6 @@
 import { useState , useRef } from "react";
-import style from "./style.css";
-import Logo from "./logo192.png";
 
+const Logo = `${process.env.PUBLIC_URL}/assets/images/logo192.png`
 
 
 

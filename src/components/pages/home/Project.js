@@ -1,7 +1,10 @@
-import style from "./style.css";
-import Projectimg1 from "./desalproject.jpg"
-import Projectimg2 from "./moviesearchproject.jpg"
-import Projectimg3 from "./smsproject.jpg"
+
+const Projectimg1 = `${process.env.PUBLIC_URL}./assets/images/desalproject.jpg`
+const Projectimg2 = `${process.env.PUBLIC_URL}./assets/images/moviesearchproject.jpg`
+const Projectimg3 = `${process.env.PUBLIC_URL}./assets/images/smsproject.jpg`
+
+
+
 export default function Project(){
     return(
         <div className="project-section">
@@ -32,11 +35,7 @@ export default function Project(){
                 <div className="projtitle">
                 <p>#3</p>
                 <h2>School Management System</h2>
-<<<<<<< HEAD
-                <a href="https://minervahubschoolmanagementsystem.netlify.app">Live</a>
-=======
                 <a href="https://minervahubschoolmanagementsystem.netlify.app/">Live</a>
->>>>>>> ff30d4dbbd895e32ef368bb59c414cb740288586
                 </div>
             </div>   
             <a className="btn btn-project"  href="">View More</a>     

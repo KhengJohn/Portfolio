@@ -1,5 +1,6 @@
-import styles from "./style.css"
-import Myimg from "./DSC_9194 - Copy.JPG"
+import "../../styles/home/style.css"
+// import Myimg from "./DSC_9194 - Copy.JPG"
+const Myimg = `${process.env.PUBLIC_URL}./assets/images//DSC_9194 - Copy.JPG`
 
 function About(){
     return(
