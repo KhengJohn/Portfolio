@@ -42,7 +42,8 @@ function Hero() {
             hearing from you.
           </p>
           {/* <p>On Here i have placed my Projects, Social Media Links and Previous Experiences</p> */}
-          <a className="btn btn-project cv">Contact Me</a>
+          <a className="btn btn-project cv">Say Hi 👋</a>
+          <a className="underlined-btn">Explore my universe</a>
         </div>
       </div>
       <div className="myheroimgdiv">
