@@ -116,7 +116,7 @@ const Skill = () => {
     }
   };
   return (
-    <>
+    <div id="section2">
       <h2 className="skill-head header-pill">My Skills</h2>
       <div className="skill-section">
         <div className="skill-card-grid">{skillElement}</div>
@@ -150,7 +150,7 @@ const Skill = () => {
           {displayTabContent()}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 export default Skill;

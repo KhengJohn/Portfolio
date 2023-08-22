@@ -28,7 +28,6 @@ nav {
 
 .navback {
   height: 4rem;
-  width: 100%;
 }
 
 /*Styling logo*/
@@ -58,7 +57,7 @@ nav {
   font-weight: 500;
 }
 .nav-links li a:hover {
-  color: var(--red);
+  color: var(--green);
 }
 .nav-links li {
   position: relative;
@@ -129,7 +128,6 @@ nav {
   }
   .navback {
     height: 2.2rem;
-    width: 100vw;
   }
 
   .hamburger {
@@ -161,7 +159,7 @@ nav {
     pointer-events: all;
   }
   .nav-links li {
-    opacity: 0;
+    opacity: 1;
   }
   .nav-links li:nth-child(1) {
     transition: all 0.5s ease 0.2s;
@@ -204,7 +202,6 @@ nav {
 
 .navback {
   height: 5rem;
-  width: 100vw;
 }
 
 .allcontent {
@@ -226,10 +223,10 @@ nav {
 
 .hero-section {
   width: 100%;
-  padding: 100px 0px;
+  padding: 80px 0px;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 55% 45%;
   align-items: center;
   flex-direction: row;
 }
@@ -267,7 +264,7 @@ text {
   color: var(--lightxx-slate);
 }
 .hero-section h2 > span {
-  color: var(--red);
+  color: green;
 }
 
 .btn-cv {
@@ -559,7 +556,6 @@ text {
   background-color: var(--navy);
   height: max-content;
   padding: 20px;
-
   color: #64ffda;
   position: relative;
   transition: 500ms;
@@ -805,7 +801,6 @@ text {
 .skill-section {
   display: grid;
   grid-template-columns: 60% 40%;
-  grid-gap: 2rem;
   color: var(--lightxx-slate);
 }
 
@@ -813,6 +808,7 @@ text {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
+  /* padding: 20px; */
 }
 
 .skill-card {
@@ -950,8 +946,7 @@ text {
 
 .PJ-tabs {
   display: flex;
-  margin: auto 0 auto auto;
-  width: 90%;
+  /* margin: auto auto auto auto; */
 }
 
 .proj-container {
@@ -1059,15 +1054,22 @@ text {
   cursor: pointer;
 }
 
+.view-more-btn {
+  width: max-content;
+  display: flex;
+  margin: auto;
+}
+
 .btn-project {
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
-  color: #020c1b;
+  color: #020c1b !important;
   background-color: #64ffda;
   padding: 15px 30px;
   border-radius: 10px;
-  transition: 1s;
+  transition: 100ms;
+  cursor: pointer;
 }
 .btn-project:hover {
   box-shadow: #64ffda 0px 5px 20px -10px;
@@ -1097,7 +1099,7 @@ text {
   }
 
   .projectImg {
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-self: center;
@@ -1108,12 +1110,12 @@ text {
   .projectImgdiv::after {
     content: "";
     display: block;
-    height: 100%;
-    width: 92%;
+    height: 80%;
+    width: 80%;
     background-color: #00ffc3a9;
     box-shadow: #64ffda 0px 5px 20px -7px;
     position: absolute;
-    top: 0;
+    top: 35px;
     transform: rotate(-3deg);
     border-radius: 20px;
     z-index: -1;
@@ -1124,10 +1126,10 @@ text {
   }
 
   .projectImg2 {
-    width: 90%;
-    margin: auto;
+    width: 100%;
+    margin: auto auto auto -30px;
     display: flex;
-    justify-self: center;
+    justify-self: left;
   }
   .projectImgdiv2 {
     position: relative;
@@ -1138,13 +1140,13 @@ text {
     justify-self: center !important;
     align-items: center !important;
     margin: auto;
-    height: 100%;
-    width: 90%;
+    height: 80%;
+    width: 80%;
     background-color: #00ffc3a9;
     box-shadow: #64ffda 0px 5px 20px -7px;
     position: absolute;
-    top: 0;
-
+    top: 35px;
+    right: 40px;
     transform: rotate(3deg);
     border-radius: 20px;
     z-index: -1;
@@ -1153,7 +1155,7 @@ text {
 }
 .stack-tab {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   margin: 0 auto 20px;
 }
@@ -1208,7 +1210,7 @@ text {
 .other-projects-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 50px;
   padding: 30px;
 }
 .other-projects {
@@ -1217,15 +1219,15 @@ text {
 }
 
 .OP-content-div {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 20px;
-    background-color: rgba(1, 68, 74, 0.216);
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  background-color: rgba(1, 68, 74, 0.216);
 }
 
 .GL {
   display: flex;
-  gap: 14px;
+  gap: 15px;
 }
 
 .GL-img {
@@ -1237,22 +1239,134 @@ text {
   justify-content: space-between;
   align-items: center;
 }
-.OP-content-top h2{
-    overflow: hidden;
-    text-overflow: ellipsis;
+.OP-content-top h2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .OP-image {
   width: 100%;
 }
 
-.OP-content-bottom{
-    display: flex;
-    gap: 10px;
+.OP-content-bottom {
+  display: flex;
+  gap: 10px;
 }
 
-.OP-text-container{
-    width: 200px; /* Set the desired width */
-    overflow: hidden;
-    white-space: nowrap;
+.OP-text-container {
+  width: 200px; /* Set the desired width */
+  overflow: hidden;
+  white-space: nowrap;
+}
+.Contact-Section {
+  color: var(--lightxx-slate);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgb(0, 0, 32);
+  width: 100%;
+  margin: auto auto 50px auto;
+  border-radius: 20px;
+  animation: bounce 20s infinite;
+}
+
+.Contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.contact-info-div {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 30px;
+}
+
+.contact-info-div p {
+  font-size: 20px;
+}
+
+.Contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(1, 68, 74, 0.216);
+  gap: 20px;
+  margin: auto;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #00664e33;
+  padding: 40px 0px;
+  transition: 600ms ease-in;
+}
+
+.input-div {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
+}
+
+.input-div input,
+.input-div textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: large;
+  background-color: var(--lightxx-slate);
+  border-radius: 5px;
+  border: 2px solid var(--green);}
+  .input-div input:focus{
+
+    border: 2px solid var(--green);
+  }
+
+
+.contact-btn{
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #020c1b !important;
+  background-color: #64ffda;
+  padding: 15px 30px;
+  border-radius: 10px;
+  transition: 100ms;
+  cursor: pointer;
+  border: none;
+}
+
+.contact-btn:hover {
+  box-shadow: #64ffda 0px 5px 20px -10px;
+}
+
+@media (max-width: 720px) {
+  .other-projects-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .stack-tab {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    overflow-x: scroll;
+    width: 350px;
+    margin: 0 auto 20px;
+  }
+  .Contact-Section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .Contact-form {
+border-top-right-radius: 20px;
+border-top-left-radius: 20px;
+border-bottom-left-radius: 0px;
+border-bottom-right-radius: 0;
+
+  }
+
 }

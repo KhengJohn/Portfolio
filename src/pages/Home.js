@@ -8,21 +8,22 @@ import Skill from "../components/pages/home/Skill";
 import Project from "../components/pages/home/Project";
 import Nav from "../components/navbar/Nav";
 import "../components/styles/home/style.css";
-
+import ContactMe from "../components/pages/home/ContactMe";
 const Home = () => {
   return (
     <div className="allContent">
-      <Nav />
-      <NavBack />
+       <Nav />
+     <NavBack />
       <div className="pageContent">
         <div className="mainContent">
           <Hero />
           <Skill />
           <Project />
           {/* <About /> */}
-          <Projects />
+          {/* <Projects /> */}
+          <ContactMe />
         </div>
-        <Socials />
+        {/* <Socials /> */}
       </div>
     </div>
   );
